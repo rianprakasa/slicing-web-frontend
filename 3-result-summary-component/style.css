@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+
+@font-face {
+	font-family: hankengrotesk;
+	src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+main {
+	font-family: hankengrotesk;
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+	border-radius: 15px;
+	box-shadow: 9px 20px 40px -9px rgba(0,0,0,0.39);
+	webkit-box-shadow: 9px 20px 40px -9px rgba(0,0,0,0.39);
+	-moz-box-shadow: 9px 20px 40px -9px rgba(0,0,0,0.39);
+	display: flex;
+}
+
+.result {
+    width: 50%;
+    background: rgb(103,67,255);
+	background: linear-gradient(180deg, rgba(103,67,255,1) 0%, rgba(49,44,233,1) 100%);
+    height: 100%;
+    border-radius: 10px;
+	padding: 15px 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.title1 {
+	font-size: 20px;
+	color: #cacaca;
+	font-weight: bold;
+} 
+
+.roundBox {
+	background: rgb(70,30,184);
+	background: linear-gradient(180deg, rgba(70,30,184,1) 0%, rgba(62,42,247,0.9) 100%);
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	align-content: center;
+	justify-items: center;
+}
+
+.roundBox span {
+	color: #b1afaf88;
+	font-weight: bold;
+}
+
+.resultValue {
+	font-size: 60px;
+	font-weight: bolder;
+	color: white;
+	margin-bottom: 8px;
+}
+
+.greatWord {
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+}
+
+.result > p {
+	color: #cacaca;
+	font-size: 15px;
+	text-align: center;
+}
+
+.summary {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.title2 {
+	font-size: 20px;
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #303b59;
+	font-weight: bold;
+}
+
+
+.info {
+	width: 70%;
+	margin: 0 auto;
+    background-color: aqua;
+	font-size: 15px;
+	color: #303b59;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-item: center;
+	
+	
+}
+
+.info span {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	margin-right: 10px;
+}
+
+
+.maxValue {
+	color: #b6b0b8;
+	margin-left: 8px;
+}
+
+.reaction {
+	color: #ff5555;
+}
+
+.memory {
+	color: #ffb21e;
+}
+
+.verbal {
+	color: #00bb8f;
+}
+
+.visual {
+	color: #1125d6;
+}
+
+.summary div:nth-child(2){
+	background-color: #fff6f5;
+}
+
+.summary div:nth-child(3) {
+	background-color: #fffbf2;
+}
+
+.summary div:nth-child(4) {
+	background-color: #f2fbfa;
+}
+
+.summary div:nth-child(5) {
+	background-color: #f3f3fd;
+}
+
+button {
+	margin: 10px auto;
+	width: 80%;
+	font-size: 12px;
+	padding: 15px;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+	background-color: #303b59;
+	border: none;
+	transition: 2s;
+}
+
+button:hover {
+	background: rgb(56,48,237);
+	background: linear-gradient(5deg, rgba(56,48,237,1) 0%, rgba(98,64,253,1) 100%);
+	cursor: pointer;
+}
+
