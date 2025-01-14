@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -----------------------///----------------- */
+
+
+
+body {
+    background-image: url('img/bg-image.png');
+    background-repeat: no-repeat;
+    background-color: #f9eeff;
+	font-family: poppins;
+}
+
+@font-face{
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: poppins-bold;
+    src: url(font/Poppins-ExtraBold.ttf);
+}
+
+.card {
+    width: 570px;
+	padding: 15px;
+	background-color: white;
+    margin: 100px auto;
+	border-radius: 10px;
+}
+
+.title {
+	color: #2d1731;
+    font-size: 40px;
+	font-family: poppins-bold;
+}
+
+.tittleIcon {
+	padding: 18px;
+}
+
+i {
+	font-size: 35px;
+	margin-right: 10px;
+	color: #ac29ea;
+
+}
+
+.accordion {
+	width: 100%;
+	color: #2d1731;
+	text-align: left;
+	border: none;
+	padding: 18px;
+	font-weight: bold;
+	font-size: medium;
+	background-color: white;
+	border-top: 1px solid #c9c8ca;
+	transition: 0.1s;
+}
+
+.accordion:hover {
+	color: #ac29ea;
+	
+}
+
+.accordion::after {
+	content: '\02795';
+	font-size: 13px;
+	float: right;
+	color: white;
+	text-decoration: none;
+	background-color: #ac29ea;
+	border-radius: 100%;
+}
+
+.panel {
+	padding:  18px;
+	overflow: hidden;
+	display: none;
+}
+
+.panel p {
+	color: #ada1ad;
+}
+
+.active {
+	border: none;
+}
+
+.active:after {
+	content: "\2796";
+	background-color: #383639;
+}
